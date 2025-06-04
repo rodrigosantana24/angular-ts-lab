@@ -19,7 +19,8 @@ const text = "texto teste"
 console.log(text.toUpperCase());
 console.log(text.indexOf("x"));
 
-// Objetos
+// // Se aprofundando em Objetos
+
 const pessoa = {
     nome: "Rodrigo",
     idade: 23,
@@ -55,6 +56,38 @@ const obj2 = {
 };
 
 Object.assign(obj, obj2);
-console.log(obj2)
 
+console.log(Object.keys(carro));
 
+const a = {
+    name: "Rodrigo"
+}
+
+const b = a;
+
+console.log(a);
+console.log(b);
+console.log(a === b);
+
+a.age = 23;
+console.log(b);
+
+delete b.age;
+console.log(a);
+console.log(b);
+
+// Loops em Arrays
+const users = ["Rodrigo", "João", "Pedro", "Miguel"];
+
+for(let i=0; i<users.length; i++) {
+    console.log(`Listando os usuários: ${users[i]}`);
+}
+
+// Métodos PUSH e POP
+const array = ["a", "b", "c"];
+array.push("d");
+console.log(array);
+
+const itemRemovido = array.pop();
+console.log(array);
+console.log(itemRemovido);
