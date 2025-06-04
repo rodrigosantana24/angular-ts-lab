@@ -1,14 +1,11 @@
 // Arrays 
 const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 console.log(lista);
 
 const lista_diversa = ["Rodrigo", true, 2, 2.10]
-
 console.log(lista_diversa);
 
 const lista2 = [1, 2, 3];
-
 console.log(lista2.length);
 
 const arr = ["a", "b", "c", "d"]
@@ -16,11 +13,9 @@ const arr = ["a", "b", "c", "d"]
 console.log(arr[2]);
 
 const allNumbers = lista.concat(lista2);
-
 console.log(allNumbers);
 
 const text = "texto teste"
-
 console.log(text.toUpperCase());
 console.log(text.indexOf("x"));
 
@@ -49,4 +44,17 @@ console.log(carro);
 
 delete carro.km;
 console.log(carro);
+
+const obj = {
+    a: "teste",
+    b: true
+};
+
+const obj2 = {
+    c: []
+};
+
+Object.assign(obj, obj2);
+console.log(obj2)
+
 
