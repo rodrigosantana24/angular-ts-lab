@@ -19,7 +19,7 @@ const text = "texto teste"
 console.log(text.toUpperCase());
 console.log(text.indexOf("x"));
 
-// // Se aprofundando em Objetos
+// Objetos
 
 const pessoa = {
     nome: "Rodrigo",
@@ -79,7 +79,7 @@ console.log(b);
 // Loops em Arrays
 const users = ["Rodrigo", "João", "Pedro", "Miguel"];
 
-for(let i=0; i<users.length; i++) {
+for (let i = 0; i < users.length; i++) {
     console.log(`Listando os usuários: ${users[i]}`);
 }
 
@@ -91,3 +91,48 @@ console.log(array);
 const itemRemovido = array.pop();
 console.log(array);
 console.log(itemRemovido);
+
+// Métodos SHIFT e UNSHIFT
+const arrayNumbers = [1, 2, 3];
+
+arrayNumbers.shift();
+console.log(arrayNumbers)
+
+arrayNumbers.unshift(1, 1.5);
+console.log(arrayNumbers);
+
+// Métodos INDEXOF e LASTINDEXOF
+const myElements = ["Morango", "Maçã", "Abacate", "Pêra", "Abacate"];
+console.log(myElements.indexOf("Morango"));
+console.log(myElements.indexOf("Abacate"));
+console.log(myElements[2]);
+
+// Métodos SLICE
+let testeSlice = ["a", "b", "c", "d", "e", "f"];
+let subArray = testeSlice.slice(2, 4);
+
+console.log(testeSlice);
+console.log(subArray);
+
+subArray = testeSlice.slice(2);
+console.log(subArray);
+
+subArray = testeSlice.slice(10, 20);
+console.log(subArray);
+
+// Método ForEach
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+    console.log(`O número é: ${numero}`);
+})
+
+const posts = [
+    { title: "Primeiro post", category: "PHP" },
+    { title: "Segundo post", category: "JavaScript" },
+    { title: "Terceiro post", category: "Python" }
+]
+
+posts.forEach((post)=>{
+    console.log(`Exibindo post: ${post.title}, da categoria ${post.category}`);
+})
