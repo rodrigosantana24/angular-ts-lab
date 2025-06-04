@@ -136,3 +136,20 @@ const posts = [
 posts.forEach((post)=>{
     console.log(`Exibindo post: ${post.title}, da categoria ${post.category}`);
 })
+
+// Método INCLUDE
+const brands = ["BMW", "VW", "Fiat"];
+console.log(brands.includes("Fiat"));
+console.log(brands.includes("Mercedes"));
+
+if(brands.includes("Fiat")) {
+    console.log("Há carros da marca Fiat!");
+} else {
+  console.log("Não há carros da marca!");  
+} 
+
+// Método REVERSE 
+const reverseTest = [1, 2, 3, 4, 5, 6];
+reverseTest.reverse();
+
+console.log(reverseTest);
