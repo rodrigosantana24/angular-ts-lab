@@ -1,4 +1,18 @@
 .bg-image {
     background-image: url("../ImagensCSS/img/Fundos-de-Tijolo-scaled.jpg");
     padding: 20px;
+    color: yellow;
+}
+
+/* Centralizando bg image */
+.nao-centralizada-bg, 
+.centralizada-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../ImagensCSS/img/japan-pictures.jpg");
+}
+
+.centralizada-bg {
+    background-position: center;
+    background-size: cover;
 }
