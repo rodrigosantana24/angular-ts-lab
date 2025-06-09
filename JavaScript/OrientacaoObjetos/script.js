@@ -41,3 +41,50 @@ console.log(Object.getPrototypeOf(myObject));
 const mySecondObject = Object.create(myObject);
 console.log(mySecondObject);
 console.log(mySecondObject.a);
+
+// Classes
+const cachorro = {
+    raca: null,
+    patas: 4
+};
+
+const pastorAlemao = Object.create(cachorro);
+pastorAlemao.raca = "Pastor Alemão";
+console.log(pastorAlemao);
+console.log(pastorAlemao.patas);
+
+const bulldog = Object.create(cachorro);
+bulldog.raca = "Bulldog"
+console.log(bulldog);
+console.log(bulldog.patas);
+
+// Função como classe - função construtora
+function criarCachorro(nome, raca) {
+    const cachorro = Object.create({})
+    cachorro.nome = nome;
+    cachorro.raca = raca;
+    
+    return cachorro;
+}
+
+const bob = criarCachorro("Bob", "Vira-lata");
+console.log(bob);
+
+const jack = criarCachorro("Jack", "Poodle");
+console.log(jack);
+
+// Funções como CLasses
+function Cachorro(nome, raca) {
+    this.nome = nome
+    this.raca = raca
+}
+
+const husky = new Cachorro("Ozzy", "Husky");
+console.log(husky);
+
+// Métodos na função construtora
+Cachorro.prototype.uivar = function() {
+    console.log("Auuuuuuu!");
+}
+
+husky.uivar();
