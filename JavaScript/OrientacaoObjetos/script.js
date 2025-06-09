@@ -26,3 +26,18 @@ console.log(pessoa.getNome());
 pessoa.setNome("Santana");
 console.log(pessoa.getNome());
 
+// Prototype
+const text = "Sdlalkjdjlkas";
+console.log(Object.getPrototypeOf(text));
+const bool = true;
+console.log(Object.getPrototypeOf(bool));
+
+const myObject = {
+    a: "b"
+};
+
+console.log(Object.getPrototypeOf(myObject));
+
+const mySecondObject = Object.create(myObject);
+console.log(mySecondObject);
+console.log(mySecondObject.a);
