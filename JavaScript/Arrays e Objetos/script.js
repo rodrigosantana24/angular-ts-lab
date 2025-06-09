@@ -187,3 +187,43 @@ console.log(fraseDeCompra);
 const palavra = "Teste "
 console.log(palavra.repeat(5));
 
+// Rest Operator
+const somaInfinita = (...args) => {
+    let total = 0; 
+    for(let i=0; i<args.length; i++) {
+        total += args[i];
+    }
+    return total;
+}
+
+console.log(somaInfinita(1, 20, 30, 40));   
+
+// Estrutura de Repetição For ... Of
+const somaInfinita2 = (...args) => {
+    let total=0;
+    for(num of args) {
+        total += num;
+    }
+    return total;
+}
+
+console.log(somaInfinita2(1, 20, 30, 40));   
+
+// Destructuring 
+const userDetails = {
+    firstName: "Rodrigo",
+    lastName: "Santana",
+    job: "Programador"
+}
+
+const {firstName, lastName, job} = userDetails;
+console.log(firstName, lastName, job);
+
+const {firstName: primeiroNome} = userDetails;
+console.log(primeiroNome);
+
+// Destructuring em Arrays
+const myList = ["Avião", "Submarino", "Carro"];
+
+const [veiculoA, veiculoB, veiculoC] = myList;
+console.log(veiculoA, veiculoB, veiculoC);
