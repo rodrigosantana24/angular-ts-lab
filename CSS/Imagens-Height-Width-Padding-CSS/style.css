@@ -1,0 +1,75 @@
+.bg-image {
+    background-image: url("../Imagens-Height-Width-Padding-CSS/img/Fundos-de-Tijolo-scaled.jpg");
+    padding: 20px;
+    color: yellow;
+}
+
+/* Centralizando bg image */
+.nao-centralizada-bg, 
+.centralizada-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../Imagens-Height-Width-Padding-CSS/img/japan-pictures.jpg");
+}
+
+.centralizada-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Height and Width */
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width2 {
+    height: 300px;
+    background-color: #333;
+}
+
+.sem-padding {
+    background-color: #111;
+    color: #fff;
+}
+
+.com-padding {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.padding-individual {
+    background-color: #222;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.shorthand-padding {
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding2 {
+    background-color: #555;
+    padding: 10px 20px;
+}
+
+.sem-border-box {
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.com-border-box {
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
