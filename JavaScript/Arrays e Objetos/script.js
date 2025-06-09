@@ -153,4 +153,11 @@ const reverseTest = [1, 2, 3, 4, 5, 6];
 reverseTest.reverse();
 console.log(reverseTest);
 
-// Métodos de STRINGS
+// Métodos de STRINGS - TRIM
+const trimTest = "  testando \n  ";
+console.log(trimTest);
+console.log(trimTest.trim());
+
+console.log(trimTest.length);
+console.log(trimTest.trim().length);
+
