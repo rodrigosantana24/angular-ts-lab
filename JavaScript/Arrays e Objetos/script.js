@@ -167,6 +167,23 @@ const testPadStart = "1";
 const newNumber = testPadStart.padStart(4, "0");
 console.log(newNumber);
 
-
 const testPadEnd = newNumber.padEnd(10, "0");
 console.log(testPadEnd);
+
+// Métodos de STRINGS - Split
+const frase = "O rato roeu a roupa do rei de Roma"
+const arrayDaFrase = frase.split(" ");
+console.log(arrayDaFrase);
+
+// Métodos de STRINGS - Join
+const joinFrase = arrayDaFrase.join(" ");
+console.log(joinFrase);
+
+const itensParaComprar = ["Mouse", "Teclado", "Monitor"];
+const fraseDeCompra = `Preciso comprar: ${itensParaComprar.join(", ")}.`
+console.log(fraseDeCompra);
+
+// Métodos de STRINGS - Repeat
+const palavra = "Teste "
+console.log(palavra.repeat(5));
+
