@@ -151,5 +151,6 @@ if(brands.includes("Fiat")) {
 // Método REVERSE 
 const reverseTest = [1, 2, 3, 4, 5, 6];
 reverseTest.reverse();
-
 console.log(reverseTest);
+
+// Métodos de STRINGS
