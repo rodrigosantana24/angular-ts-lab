@@ -64,3 +64,13 @@
     width: 200px;
     height: 100px;
 }
+
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
