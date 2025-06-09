@@ -161,3 +161,12 @@ console.log(trimTest.trim());
 console.log(trimTest.length);
 console.log(trimTest.trim().length);
 
+// Métodos de STRINGS - Padstart
+const testPadStart = "1";
+
+const newNumber = testPadStart.padStart(4, "0");
+console.log(newNumber);
+
+
+const testPadEnd = newNumber.padEnd(10, "0");
+console.log(testPadEnd);
