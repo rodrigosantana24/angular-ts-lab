@@ -169,3 +169,25 @@ console.log(myPost.exibirTitulo);
 
 myPost.adicionarTags = "Programação, JavaScript e Js"
 console.log(myPost);
+
+// Herança
+class Mamifero {
+    constructor(patas) {
+        this.patas = patas;
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas, nome) {
+        super(patas, patas);
+        this.nome = nome;
+    }
+}
+
+const shark = new Lobo(4, "Shark");
+console.log(shark);
+
+console.log(shark instanceof Lobo); // true
+console.log(Lobo instanceof Mamifero); // false
+console.log(new Lobo(4, "Teste") instanceof Mamifero); // true
+console.log(new Post("Teste", "Teste") instanceof Lobo); // false
