@@ -224,6 +224,24 @@ console.log(primeiroNome);
 
 // Destructuring em Arrays
 const myList = ["Avião", "Submarino", "Carro"];
-
 const [veiculoA, veiculoB, veiculoC] = myList;
 console.log(veiculoA, veiculoB, veiculoC);
+
+// JSON
+const myJson = '{"name": "Rodrigo", "age": 23, "skills": ["Java", "JavaScript", "Html", "Css"]}';
+console.log(myJson);
+
+// JSON PARA OBJETO E OBJETO PARA JSON
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+
+// Json inválido
+// const badJson = '{"name": Rodrigo, "age": 23}'
+// const myBadObject = JSON.parse(badJson);
+// console.log(myBadObject);
+
+myObject.isOpenToWork = true;
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject);
+console.log(myNewJson);
