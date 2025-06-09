@@ -75,8 +75,8 @@ console.log(jack);
 
 // Funções como CLasses
 function Cachorro(nome, raca) {
-    this.nome = nome
-    this.raca = raca
+    this.nome = nome;
+    this.raca = raca;
 }
 
 const husky = new Cachorro("Ozzy", "Husky");
@@ -88,3 +88,59 @@ Cachorro.prototype.uivar = function() {
 }
 
 husky.uivar();
+
+// Classes ES6
+class Gato {
+    constructor(nome, cor) {
+        this.nome = nome;
+        this.cor = cor;
+    }
+}
+
+const maxon = new Gato("Maxon", "Laranja");
+const eren = new Gato("Eren", "Branco");
+
+console.log(maxon);
+console.log(eren);
+
+class Caminhao {
+    constructor(eixos, cor) {
+        this.eixos = eixos;
+        this.cor = cor;
+    }
+
+    descreverCaminhao() {
+        console.log(`Este caminhao possui ${this.eixos} eixos e é da cor ${this.cor}`);
+    }
+}
+
+const caminhao1 = new Caminhao(8, "Preto")
+caminhao1.descreverCaminhao();
+
+// Override
+class Humano {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+}
+
+const rodrigo = new Humano("Rodrigo", 23);
+console.log(rodrigo);
+
+Humano.prototype.idade = "Não definida"
+
+// Symbol
+class Aviao {
+    constructor(marca, turbinas) {
+        this.marca = marca;
+        this.turbinas = turbinas;
+    }
+}
+
+const asas = Symbol()
+Aviao.prototype[asas] = 2;
+
+const boeing = new Aviao("Boeing", 10);
+console.log(boeing);
+console.log(boeing[asas]);
