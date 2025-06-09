@@ -144,3 +144,28 @@ Aviao.prototype[asas] = 2;
 const boeing = new Aviao("Boeing", 10);
 console.log(boeing);
 console.log(boeing[asas]);
+
+// Getters e Setters
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.tags = tags;
+    }
+
+    get exibirTitulo() {
+        return `Você está lendo ${this.titulo}`;
+    }
+
+    set adicionarTags(tags) {
+        const tagsArrays = tags.split(", ");
+        this.tags = tagsArrays;
+    }
+}
+
+const myPost = new Post("Algum post", "É um post sobre programação");
+console.log(myPost);
+console.log(myPost.exibirTitulo);
+
+myPost.adicionarTags = "Programação, JavaScript e Js"
+console.log(myPost);
