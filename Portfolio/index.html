@@ -3,14 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio!</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Seu Nome - Desenvolvedor Full-Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <h1>Aqui estão os meus projetos pessoais</h1>
-    <p>Meus projetos BACKEND</p> 
-    <a href="https://github.com/rodrigosantana24/AprendizagemBackend" target="_blank">Clique aqui!</a>
-    <p>Meus projetos FRONTEND</p>
-    <a href="https://github.com/rodrigosantana24/AprendizagemFrontend" target="_blank">Clique Aqui!</a>
+<body class="dark-theme">
+
+    <header>
+        <nav>
+            <div class="logo"><span>&lt;</span>Seu Nome<span>/&gt;</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Olá, eu sou [Seu Nome]</h1>
+                <p class="fade-in-delay-1">Desenvolvedor Full-Stack apaixonado por criar soluções inovadoras.</p>
+                <a href="#projects" class="cta-button fade-in-delay-2">Meus Projetos</a>
+                <div class="social-links fade-in-delay-3">
+                    <a href="https://github.com/seu-usuario" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seu-usuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou um desenvolvedor full-stack com experiência na criação de aplicações web completas e robustas. Tenho paixão por aprender novas tecnologias e aplicá-las para resolver problemas do mundo real. Meu objetivo é sempre entregar um código limpo, eficiente e escalável.</p>
+                    <p>Quando não estou programando, gosto de [seu hobby aqui, por exemplo: explorar novas trilhas, ler sobre tecnologia ou jogar xadrez].</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="Sua Foto Profissional">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-database"></i> Express.js</li>
+                        <li><i class="fas fa-server"></i> RESTful APIs</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                         </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Bancos de Dados & Ferramentas</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> MongoDB</li>
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Imagem do Projeto 1">
+                    <div class="project-info">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Uma breve descrição do projeto, seus objetivos e os desafios que você superou.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Ver Demo</a>
+                            <a href="#" target="_blank">Código no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Imagem do Projeto 2">
+                    <div class="project-info">
+                        <h3>Nome do Projeto 2</h3>
+                        <p>Uma breve descrição do projeto, seus objetivos e os desafios que você superou.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Ver Demo</a>
+                            <a href="#" target="_blank">Código no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
+            <a href="mailto:seuemail@example.com" class="cta-button">Enviar um E-mail</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
