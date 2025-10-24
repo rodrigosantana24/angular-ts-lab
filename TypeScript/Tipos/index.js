@@ -1,11 +1,26 @@
 // number
-var x = 10;
+let x = 10;
 console.log(x);
 console.log(typeof x);
 //string
-var firstName = "Rodrigo";
+const firstName = "Rodrigo";
 console.log(firstName.toLocaleUpperCase());
-var lastName = " Santana";
-var fullName = firstName + lastName;
+const lastName = " Santana";
+let fullName = firstName + lastName;
 console.log(fullName);
 console.log(typeof fullName);
+//boolean
+let a = false;
+console.log(a);
+console.log(typeof a);
+a = true;
+console.log(a);
+console.log(typeof a);
+a = false;
+// inferencia e annotation
+let ann = "Teste"; // annotation
+let inf = "Teste"; // inferencia
+// inf = 1;
+// ann = 1;
+console.log("Testando...");
+export {};
